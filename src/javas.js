@@ -40,7 +40,6 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayTemp);
 }
-
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#form-control-input").value;
